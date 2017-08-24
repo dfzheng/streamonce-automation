@@ -17,7 +17,7 @@ public class Hooks {
 public void MarkEmailAsRead() throws Exception{
     Session session = Session.getDefaultInstance(new Properties());
     Store store = session.getStore("imaps");
-    store.connect("imap.googlemail.com", 993, "cnctester2@dev.thoughtworks.com", "CnCTest1234567!");
+    store.connect("", 993, "", "");
     Folder inbox = store.getFolder("INBOX");
     inbox.open(Folder.READ_WRITE);
 

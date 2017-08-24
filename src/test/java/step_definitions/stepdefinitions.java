@@ -54,9 +54,9 @@ public class stepdefinitions {
 
         String to = "so-automation@dev.thoughtworks.com";
 
-        String from = "cnctester3@dev.thoughtworks.com";
-        final String username = "cnctester3@dev.thoughtworks.com";
-        final String password = "CnCTest1234567!";
+        String from = "";
+        final String username = "";
+        final String password = "";
 
         String host = "smtp.gmail.com";
 
@@ -187,7 +187,7 @@ public class stepdefinitions {
         String ActualBody = driver.findElement(By.cssSelector(".soemailbody")).getText();
         String ActualSender = driver.findElement(By.xpath(".//*[@id='jive-body-main']/div[2]/section/div[1]/div[2]/table/tbody/tr[1]/td[2]/a")).getText();
         String ExpectedBody = "This is to testing Email to Jive" + str;
-        String ExpectedSend = "cnctester3@dev.thoughtworks.com";
+        String ExpectedSend = "";
         assertEquals(ExpectedBody, ActualBody);
         assertEquals(ExpectedSend, ActualSender);
 
@@ -199,7 +199,7 @@ public class stepdefinitions {
     public void I_get_the_email_in_Gmail() throws Exception {
         Session session = Session.getDefaultInstance(new Properties());
         Store store = session.getStore("imaps");
-        store.connect("imap.googlemail.com", 993, "cnctester2@dev.thoughtworks.com", "CnCTest1234567!");
+        store.connect("imap.googlemail.com", 993, "", "");
         Folder inbox = store.getFolder("INBOX");
         inbox.open(Folder.READ_WRITE);
 

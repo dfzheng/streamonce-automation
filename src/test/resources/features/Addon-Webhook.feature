@@ -5,8 +5,8 @@ Feature: Addon and Webhook
   Scenario: Login myTW
     When I send a email to group
     And I wait for a while
-    And I enter Username as "cnctester2@dev.thoughtworks.com" and Password as "1R&@SDNvOOoQnQ6Nn$9wx@R&s0"
-    And I enter Security answer as "Super Mario Bros"
+    And I enter Username as "" and Password as ""
+    And I enter Security answer as ""
     Then I will access my TW homepage
 
 
