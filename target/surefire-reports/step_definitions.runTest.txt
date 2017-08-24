@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: step_definitions.runTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 71.208 sec <<< FAILURE!
+Then I get the email in Gmail            Time elapsed: 0.002 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<test2017-08-23 13:1[9]> but was:<test2017-08-23 13:1[5]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at step_definitions.stepdefinitions.I_get_the_email_in_Gmail(stepdefinitions.java:225)
+	at ✽.Then I get the email in Gmail(features/DiscussionJive2Email.feature:14)
+
+Scenario:     Time elapsed: 0.003 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<test2017-08-23 13:1[9]> but was:<test2017-08-23 13:1[5]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at step_definitions.stepdefinitions.I_get_the_email_in_Gmail(stepdefinitions.java:225)
+	at ✽.Then I get the email in Gmail(features/DiscussionJive2Email.feature:14)
+
