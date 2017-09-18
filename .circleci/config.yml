@@ -23,4 +23,3 @@ jobs:
           - image: selenium/standalone-chrome:latest
     steps:
           - checkout
-          - run：  mvn test
