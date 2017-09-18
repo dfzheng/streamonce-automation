@@ -145,14 +145,16 @@ public class stepdefinitions {
         elementToClick.click();
     }
 
-    @And("^I open a new tab and login Gmail with \"([^\"]*)\"$")
-    public void I_open_a_new_tab_and_login_Gmail_with(String arg1) {
+    @And("^I open a new tab and login Gmail$")
+    public void I_open_a_new_tab_and_login_Gmail_with() {
+
+        String google_user = System.getenv("USER3_USERNAME");
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("window.open()");
         ArrayList<String> tabs1 = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs1.get(2));
         driver.get("https://mail.google.com/mail/u/0/#inbox");
-        driver.findElement(By.id("identifierId")).sendKeys(arg1);
+        driver.findElement(By.id("identifierId")).sendKeys(google_user);
         driver.findElement(By.id("identifierNext")).click();
     }
 
