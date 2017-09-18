@@ -4,40 +4,49 @@ import cucumber.annotation.en.And;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.search.FlagTerm;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.assertEquals;
-import org.openqa.selenium.remote.Augmenter;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import java.net.URL;
 
 
 public class stepdefinitions {
 
-    RemoteWebDriver driver = new RemoteWebDriver(
-            new URL("http://0.0.0.0:4444/wd/hub"),
-            DesiredCapabilities.chrome());
+    private RemoteWebDriver driver;
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     Timestamp now = new Timestamp(System.currentTimeMillis());
     String str = df.format(now);
 
 
+
+    @Before
+    public void setupForTest() throws MalformedURLException{
+
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+
+        driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    }
 
     @Given("^I am on myTW login page$")
     public void goTomyTW() {

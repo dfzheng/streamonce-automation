@@ -28,7 +28,7 @@ formatter.match({
   "location": "stepdefinitions.goTomyTW()"
 });
 formatter.result({
-  "duration": 6870189067,
+  "duration": 7602364952,
   "status": "passed"
 });
 formatter.scenario({
@@ -84,29 +84,27 @@ formatter.match({
   "location": "stepdefinitions.I_enter_Username_as_and_Password_as()"
 });
 formatter.result({
-  "duration": 1061749091,
-  "status": "passed"
+  "duration": 662460486,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: keys should be a string\n  (Session info: chrome\u003d60.0.3112.113)\n  (Driver info: chromedriver\u003d2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform\u003dMac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 41 milliseconds\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027CNdfzheng.local\u0027, ip: \u0027fe80:0:0:0:ca1:1876:131e:fa7c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12.6\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir\u003d/var/folders/q0/43fl0y850d5g9ph3m8m0yczr0000gn/T/.org.chromium.Chromium.gJ4IpY}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d60.0.3112.113, platform\u003dMAC, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: c046a965253ae301a735fcaa4e6da653\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)\n\tat step_definitions.stepdefinitions.I_enter_Username_as_and_Password_as(stepdefinitions.java:64)\n\tat ✽.When I login myTW(features/DiscussionJive2Email.feature:11)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "stepdefinitions.I_enter_Security_answer_as()"
 });
 formatter.result({
-  "duration": 947745862,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepdefinitions.I_open_a_new_tab_and_go_to_testing_group()"
 });
 formatter.result({
-  "duration": 7149045432,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepdefinitions.I_post_a_new_discussion_in_Jive()"
 });
 formatter.result({
-  "duration": 3668765103,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -118,22 +116,18 @@ formatter.match({
   "location": "stepdefinitions.I_open_a_new_tab_and_login_Gmail_with(String)"
 });
 formatter.result({
-  "duration": 1990508429,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepdefinitions.I_wait_for_a_while()"
 });
 formatter.result({
-  "duration": 40002805286,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepdefinitions.I_get_the_email_in_Gmail()"
 });
 formatter.result({
-  "duration": 10250918523,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[test2017-09-15 17:29]\u003e but was:\u003c[Getting started on Google+]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat step_definitions.stepdefinitions.I_get_the_email_in_Gmail(stepdefinitions.java:232)\n\tat ✽.Then I get the email in Gmail(features/DiscussionJive2Email.feature:17)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 });
