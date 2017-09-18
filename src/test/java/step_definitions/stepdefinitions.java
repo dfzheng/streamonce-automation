@@ -29,7 +29,9 @@ import java.net.URL;
 
 public class stepdefinitions {
 
-    WebDriver driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), DesiredCapabilities.chrome());
+    RemoteWebDriver driver = new RemoteWebDriver(
+            new URL("http://0.0.0.0:4444/wd/hub"),
+            DesiredCapabilities.chrome());
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     Timestamp now = new Timestamp(System.currentTimeMillis());
