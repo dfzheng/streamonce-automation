@@ -5,8 +5,8 @@ Feature: QuestionJiveToEmail
     Given I am on myTW login page
 #Scenario with AND
   Scenario:
-    When I enter Username as "" and Password as ""
-    And  I enter Security answer as ""
+    When I login myTW
+    And  I enter Security answer
     And  I open a new tab and go to testing group
     And  I post a new question in Jive
     And  I wait for a while

@@ -12,12 +12,14 @@ import java.util.Properties;
  */
 public class Hooks {
 
-//Set unread emanil to read
+//Set unread email to read
 @Before
 public void MarkEmailAsRead() throws Exception{
     Session session = Session.getDefaultInstance(new Properties());
     Store store = session.getStore("imaps");
-    store.connect("", 993, "", "");
+    String username = System.getenv("USER3_USERNAME");
+    String password = System.getenv("USER_GOOGLE_PASSWORD");
+    store.connect("imap.googlemail.com", 993, username, password);
     Folder inbox = store.getFolder("INBOX");
     inbox.open(Folder.READ_WRITE);
 

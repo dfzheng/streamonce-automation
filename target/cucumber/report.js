@@ -1,9 +1,9 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('features/DiscussionJive2Email.feature');
 formatter.feature({
   "line": 1,
-  "name": "DiscussionJiveToEmail",
+  "name": "DiscussionJive2Email",
   "description": "",
-  "id": "discussionjivetoemail",
+  "id": "discussionjive2email",
   "keyword": "Feature"
 });
 formatter.background({
@@ -20,7 +20,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "I am on myTW login page",
   "keyword": "Given "
 });
@@ -28,128 +28,112 @@ formatter.match({
   "location": "stepdefinitions.goTomyTW()"
 });
 formatter.result({
-  "duration": 6058229819,
+  "duration": 6870189067,
   "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 6,
+      "line": 9,
       "value": "#Scenario with AND"
     }
   ],
-  "line": 7,
+  "line": 10,
   "name": "",
   "description": "",
-  "id": "discussionjivetoemail;",
+  "id": "discussionjive2email;",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 8,
-  "name": "I enter Username as \"cnctester2@dev.thoughtworks.com\" and Password as \"1R\u0026@SDNvOOoQnQ6Nn$9wx@R\u0026s0\"",
+  "line": 11,
+  "name": "I login myTW",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "I enter Security answer as \"Super Mario Bros\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I open a new tab and go to testing group",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "I post a new discussion in Jive",
-  "keyword": "And "
-});
-formatter.step({
   "line": 12,
-  "name": "I open a new tab and login Gmail with \"cnctester2@dev.thoughtworks.com\"",
+  "name": "I enter Security answer",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "I wait for a while",
+  "name": "I open a new tab and go to testing group",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
+  "name": "I post a new discussion in Jive",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "I open a new tab and login Gmail with \"cnctester3@dev.thoughtworks.com\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I wait for a while",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
   "name": "I get the email in Gmail",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "cnctester2@dev.thoughtworks.com",
-      "offset": 21
-    },
-    {
-      "val": "1R\u0026@SDNvOOoQnQ6Nn$9wx@R\u0026s0",
-      "offset": 71
-    }
-  ],
-  "location": "stepdefinitions.I_enter_Username_as_and_Password_as(String,String)"
+  "location": "stepdefinitions.I_enter_Username_as_and_Password_as()"
 });
 formatter.result({
-  "duration": 800709042,
+  "duration": 1061749091,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Super Mario Bros",
-      "offset": 28
-    }
-  ],
-  "location": "stepdefinitions.I_enter_Security_answer_as(String)"
+  "location": "stepdefinitions.I_enter_Security_answer_as()"
 });
 formatter.result({
-  "duration": 746719980,
+  "duration": 947745862,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdefinitions.I_open_a_new_tab_and_go_to_testing_group()"
 });
 formatter.result({
-  "duration": 6434977145,
+  "duration": 7149045432,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdefinitions.I_post_a_new_discussion_in_Jive()"
 });
 formatter.result({
-  "duration": 4787220576,
+  "duration": 3668765103,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "cnctester2@dev.thoughtworks.com",
+      "val": "cnctester3@dev.thoughtworks.com",
       "offset": 39
     }
   ],
   "location": "stepdefinitions.I_open_a_new_tab_and_login_Gmail_with(String)"
 });
 formatter.result({
-  "duration": 1989157710,
+  "duration": 1990508429,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdefinitions.I_wait_for_a_while()"
 });
 formatter.result({
-  "duration": 40002903827,
+  "duration": 40002805286,
   "status": "passed"
 });
 formatter.match({
   "location": "stepdefinitions.I_get_the_email_in_Gmail()"
 });
 formatter.result({
-  "duration": 10143229726,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003ctest2017-08-23 13:1[9]\u003e but was:\u003ctest2017-08-23 13:1[5]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat step_definitions.stepdefinitions.I_get_the_email_in_Gmail(stepdefinitions.java:225)\n\tat ✽.Then I get the email in Gmail(features/DiscussionJive2Email.feature:14)\n",
+  "duration": 10250918523,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[test2017-09-15 17:29]\u003e but was:\u003c[Getting started on Google+]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat step_definitions.stepdefinitions.I_get_the_email_in_Gmail(stepdefinitions.java:232)\n\tat ✽.Then I get the email in Gmail(features/DiscussionJive2Email.feature:17)\n",
   "status": "failed"
 });
 });

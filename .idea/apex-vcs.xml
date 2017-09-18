@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ApexVcsIndex">
+    <index-move-record>
+      <option name="firstPath" value="/src/test/resources/Annotation/QuestionJive2Email.feature" />
+      <option name="path" value="/src/test/resources/features/QuestionJive2Email.feature" />
+    </index-move-record>
+    <index-move-record>
+      <option name="firstPath" value="/src/test/resources/Annotation/Email2Jive.feature" />
+      <option name="path" value="/src/test/resources/features/Email2Jive.feature" />
+    </index-move-record>
+    <index-move-record>
+      <option name="firstPath" value="/src/test/resources/Annotation/DiscussionJive2Email.feature" />
+      <option name="path" value="/src/test/resources/features/DiscussionJive2Email.feature" />
+    </index-move-record>
+  </component>
+</project>

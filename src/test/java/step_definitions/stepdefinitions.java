@@ -20,12 +20,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import static org.junit.Assert.assertEquals;
+import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.URL;
 
 
 public class stepdefinitions {
-    WebDriver driver = null;
+
+    WebDriver driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), DesiredCapabilities.chrome());
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     Timestamp now = new Timestamp(System.currentTimeMillis());
@@ -42,21 +46,22 @@ public class stepdefinitions {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
-    @When("^I enter Username as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
-    public void I_enter_Username_as_and_Password_as(String arg1, String arg2) {
-
-        driver.findElement(By.id("okta-signin-username")).sendKeys(arg1);
-        driver.findElement(By.id("okta-signin-password")).sendKeys(arg2);
+    @When("^I login myTW$")
+    public void I_enter_Username_as_and_Password_as() {
+        String username = System.getenv("USER3_USERNAME");
+        String password = System.getenv("USER3_PASSWORD");
+        driver.findElement(By.id("okta-signin-username")).sendKeys(username);
+        driver.findElement(By.id("okta-signin-password")).sendKeys(password);
         driver.findElement(By.id("okta-signin-submit")).click();
     }
     @When("^I send a email to group$")
     public void I_send_a_email_to_group() {
 
-        String to = "so-automation@dev.thoughtworks.com";
+        String to = "test-automation@dev.thoughtworks.com";
 
-        String from = "";
-        final String username = "";
-        final String password = "";
+        String from = "cnctester3@dev.thoughtworks.com";
+        final String username = System.getenv("USER3_USERNAME");
+        final String password = System.getenv("USER_GOOGLE_PASSWORD");
 
         String host = "smtp.gmail.com";
 
@@ -89,11 +94,12 @@ public class stepdefinitions {
     }
 
 
-    @And("^I enter Security answer as \"([^\"]*)\"$")
+    @And("^I enter Security answer")
 
-    public void I_enter_Security_answer_as(String arg1) {
+    public void I_enter_Security_answer_as() {
 
-        driver.findElement(By.id("input67")).sendKeys(arg1);
+        String security_answer = System.getenv("SECURITY_ANSWER");
+        driver.findElement(By.id("input67")).sendKeys(security_answer);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.xpath(".//*[@id='form60']/div[2]/input")).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -112,7 +118,7 @@ public class stepdefinitions {
         js.executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        driver.get("https://thoughtworks-preview.jiveon.com/groups/so-automation");
+        driver.get("https://thoughtworks-preview.jiveon.com/groups/test-automation");
     }
 
 
@@ -158,7 +164,7 @@ public class stepdefinitions {
         js.executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        driver.get("https://thoughtworks-preview.jiveon.com/groups/so-automation/content");
+        driver.get("https://thoughtworks-preview.jiveon.com/groups/test-automation/content");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         String title = driver.findElement(By.xpath("//*[@id=\"j-browse-item-grid\"]/ul/li[1]/div/div[1]/header/h4/a/span[2]")).getText();
         String str1 = "Testing Email to Jive" + str;
@@ -187,7 +193,7 @@ public class stepdefinitions {
         String ActualBody = driver.findElement(By.cssSelector(".soemailbody")).getText();
         String ActualSender = driver.findElement(By.xpath(".//*[@id='jive-body-main']/div[2]/section/div[1]/div[2]/table/tbody/tr[1]/td[2]/a")).getText();
         String ExpectedBody = "This is to testing Email to Jive" + str;
-        String ExpectedSend = "";
+        String ExpectedSend = "cnctester3@dev.thoughtworks.com";
         assertEquals(ExpectedBody, ActualBody);
         assertEquals(ExpectedSend, ActualSender);
 
@@ -199,7 +205,9 @@ public class stepdefinitions {
     public void I_get_the_email_in_Gmail() throws Exception {
         Session session = Session.getDefaultInstance(new Properties());
         Store store = session.getStore("imaps");
-        store.connect("imap.googlemail.com", 993, "", "");
+        String username = System.getenv("USER3_USERNAME");
+        String password = System.getenv("USER_GOOGLE_PASSWORD");
+        store.connect("imap.googlemail.com", 993, username, password);
         Folder inbox = store.getFolder("INBOX");
         inbox.open(Folder.READ_WRITE);
 
@@ -226,7 +234,7 @@ public class stepdefinitions {
             String str2 = message.getSubject();
             String str3 = Arrays.toString(message.getFrom());
             assertEquals(str1, str2);
-            assertEquals("[CNC2 Tester2 <streamonce@dev.thoughtworks.com>]", str3);
+            assertEquals("[CNC3 Tester3 <streamonce@dev.thoughtworks.com>]", str3);
 
         }
 

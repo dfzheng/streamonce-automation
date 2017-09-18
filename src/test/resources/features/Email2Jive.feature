@@ -5,8 +5,8 @@ Feature: EmailToJive
     When I send a email to group
     And I wait for a while
     And I am on myTW login page
-    And I enter Username as "" and Password as ""
-    And I enter Security answer as ""
+    And I login myTW
+    And I enter Security answer
     And I wait for a while
     Then I should see a discussion with the same title as the email
     And I open the discussion to check the content and sender

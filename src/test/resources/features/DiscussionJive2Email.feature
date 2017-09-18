@@ -1,4 +1,4 @@
-Feature: DiscussionJiveToEmail
+Feature: DiscussionJive2Email
 #This is how background can be used to eliminate duplicate steps
   Background:
   User navigates to myTW
@@ -8,10 +8,10 @@ Feature: DiscussionJiveToEmail
 
 #Scenario with AND
   Scenario:
-    When I enter Username as "" and Password as ""
-    And  I enter Security answer as ""
+    When I login myTW
+    And  I enter Security answer
     And  I open a new tab and go to testing group
     And  I post a new discussion in Jive
-    And I open a new tab and login Gmail with ""
+    And I open a new tab and login Gmail with "cnctester3@dev.thoughtworks.com"
     And  I wait for a while
     Then I get the email in Gmail
