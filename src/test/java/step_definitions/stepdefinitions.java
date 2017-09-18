@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -51,10 +50,9 @@ public class stepdefinitions {
     @Given("^I am on myTW login page$")
     public void goTomyTW() {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/dfzheng/Downloads/chromedriver");
-        driver = new ChromeDriver();
+     //   System.setProperty("webdriver.chrome.driver", "/Users/dfzheng/Downloads/chromedriver");
+    //    driver = new ChromeDriver();
         driver.get("https://thoughtworks-preview.jiveon.com");
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @When("^I login myTW$")
