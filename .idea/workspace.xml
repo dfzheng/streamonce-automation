@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd471dd-c305-467f-a5e3-99bfa465c9f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.circleci/config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/execute_test.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mail/Gsuite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/AddonWebhook.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/features/Addon-Webhook.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/Gsuite.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/features/Addon-Webhook.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/AddonWebhook.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/TW.iml" afterPath="$PROJECT_DIR$/SO-automation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myTW-automation" afterPath="$PROJECT_DIR$/myTW-automation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/Hooks.class" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/Hooks.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/stepdefinitions$1.class" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/stepdefinitions$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/stepdefinitions.class" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/stepdefinitions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/stepdefinitions.java" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/stepdefinitions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/DiscussionJive2Email.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/DiscussionJive2Email.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/Email2Jive.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/Email2Jive.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/QuestionJive2Email.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/QuestionJive2Email.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber/report.js" afterPath="$PROJECT_DIR$/target/cucumber/report.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-step_definitions.runTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-step_definitions.runTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/step_definitions.runTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/step_definitions.runTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/features/DiscussionJive2Email.feature" afterPath="$PROJECT_DIR$/target/test-classes/features/DiscussionJive2Email.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/features/Email2Jive.feature" afterPath="$PROJECT_DIR$/target/test-classes/features/Email2Jive.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/features/QuestionJive2Email.feature" afterPath="$PROJECT_DIR$/target/test-classes/features/QuestionJive2Email.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.circleci/config.yml" afterPath="$PROJECT_DIR$/.circleci/config.yml" />
     </list>
     <ignored path="CucumberSample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,8 +54,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -251,8 +225,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1749" />
-    <option name="y" value="-76" />
+    <option name="x" value="1594" />
+    <option name="y" value="204" />
     <option name="width" value="1440" />
     <option name="height" value="1032" />
   </component>
@@ -991,7 +965,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1749" y="-76" width="1440" height="1032" extended-state="0" />
+    <frame x="1594" y="204" width="1440" height="1032" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1015,7 +990,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25957447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3106383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3106383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33619457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1483,8 +1458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
