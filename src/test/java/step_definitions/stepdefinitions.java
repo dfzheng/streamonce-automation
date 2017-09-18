@@ -4,7 +4,6 @@ import cucumber.annotation.en.And;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -37,21 +36,12 @@ public class stepdefinitions {
 
 
 
-    @Before
-    public void setupForTest() throws MalformedURLException{
+    @Given("^I am on myTW login page$")
+    public void goTomyTW() throws MalformedURLException {
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-
         driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-    }
-
-    @Given("^I am on myTW login page$")
-    public void goTomyTW() {
-
-     //   System.setProperty("webdriver.chrome.driver", "/Users/dfzheng/Downloads/chromedriver");
-    //    driver = new ChromeDriver();
         driver.get("https://thoughtworks-preview.jiveon.com");
     }
 

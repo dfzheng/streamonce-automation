@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="step_definitions.runTest" time="0.063" errors="2" skipped="6">
+<testsuite tests="9" failures="0" name="step_definitions.runTest" time="0.122" errors="2" skipped="7">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -62,127 +62,322 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Given I am on myTW login page   " name="Given I am on myTW login page   " time="0.001"/>
-  <testcase classname="When I login myTW    " name="When I login myTW    " time="0.004">
-    <error message="unknown error: keys should be a string
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 41 milliseconds
+  <testcase classname="Given I am on myTW login page   " name="Given I am on myTW login page   " time="0.006">
+    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/q0/43fl0y850d5g9ph3m8m0yczr0000gn/T/.org.chromium.Chromium.gJ4IpY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: c046a965253ae301a735fcaa4e6da653" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: keys should be a string
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 41 milliseconds
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/q0/43fl0y850d5g9ph3m8m0yczr0000gn/T/.org.chromium.Chromium.gJ4IpY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: c046a965253ae301a735fcaa4e6da653
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at step_definitions.stepdefinitions.I_enter_Username_as_and_Password_as(stepdefinitions.java:64)
-	at ✽.When I login myTW(features/DiscussionJive2Email.feature:11)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at step_definitions.stepdefinitions.goTomyTW(stepdefinitions.java:43)
+	at ✽.Given I am on myTW login page(features/DiscussionJive2Email.feature:6)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4444 [/0.0.0.0] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:343)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at step_definitions.stepdefinitions.goTomyTW(stepdefinitions.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:44)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:223)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:45)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:34)
+	at cucumber.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:76)
+	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:65)
+	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:20)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.junit.FeatureRunner.run(FeatureRunner.java:72)
+	at cucumber.junit.Cucumber.runChild(Cucumber.java:75)
+	at cucumber.junit.Cucumber.runChild(Cucumber.java:36)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.junit.Cucumber.run(Cucumber.java:80)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 62 more
 </error>
-    <system-out>&amp;#27;[1A    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on myTW login page&amp;#27;[0m &amp;#27;[90m# stepdefinitions.goTomyTW()&amp;#27;[0m
+    <system-out>Feature: DiscussionJive2Email
+
+  #This is how background can be used to eliminate duplicate steps
+  Background:                     &amp;#27;[90m# features/DiscussionJive2Email.feature:3&amp;#27;[0m
+    User navigates to myTW
+
+    &amp;#27;[90mGiven &amp;#27;[0m&amp;#27;[90mI am on myTW login page&amp;#27;[0m &amp;#27;[90m# stepdefinitions.goTomyTW()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario:   " name="Scenario:   " time="0.007">
+    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at step_definitions.stepdefinitions.goTomyTW(stepdefinitions.java:43)
+	at ✽.Given I am on myTW login page(features/DiscussionJive2Email.feature:6)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4444 [/0.0.0.0] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:343)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at step_definitions.stepdefinitions.goTomyTW(stepdefinitions.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:44)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:223)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:45)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:34)
+	at cucumber.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:76)
+	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:65)
+	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:20)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.junit.FeatureRunner.run(FeatureRunner.java:72)
+	at cucumber.junit.Cucumber.runChild(Cucumber.java:75)
+	at cucumber.junit.Cucumber.runChild(Cucumber.java:36)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.junit.Cucumber.run(Cucumber.java:80)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 62 more
+</error>
+  </testcase>
+  <testcase classname="When I login myTW    " name="When I login myTW    " time="0.013">
+    <skipped/>
+    <system-out>&amp;#27;[1A    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI am on myTW login page&amp;#27;[0m &amp;#27;[90m# stepdefinitions.goTomyTW()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+      System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+      	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+      	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+      	at step_definitions.stepdefinitions.goTomyTW(stepdefinitions.java:43)
+      	at ✽.Given I am on myTW login page(features/DiscussionJive2Email.feature:6)
+      Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4444 [/0.0.0.0] failed: Connection refused (Connection refused)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+      	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+      	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+      	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+      	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+      	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+      	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+      	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:343)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+      	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+      	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+      	at step_definitions.stepdefinitions.goTomyTW(stepdefinitions.java:43)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:44)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:223)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:45)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:34)
+      	at cucumber.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:76)
+      	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:65)
+      	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:20)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+      	at cucumber.junit.FeatureRunner.run(FeatureRunner.java:72)
+      	at cucumber.junit.Cucumber.runChild(Cucumber.java:75)
+      	at cucumber.junit.Cucumber.runChild(Cucumber.java:36)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+      	at cucumber.junit.Cucumber.run(Cucumber.java:80)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+      	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+      Caused by: java.net.ConnectException: Connection refused (Connection refused)
+      	at java.net.PlainSocketImpl.socketConnect(Native Method)
+      	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+      	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+      	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+      	at java.net.Socket.connect(Socket.java:589)
+      	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+      	... 62 more
+      &amp;#27;[0m
 
   #Scenario with AND
   Scenario:                                                                     &amp;#27;[90m# features/DiscussionJive2Email.feature:10&amp;#27;[0m
     &amp;#27;[90mWhen &amp;#27;[0m&amp;#27;[90mI login myTW&amp;#27;[0m                                                           &amp;#27;[90m# stepdefinitions.I_enter_Username_as_and_Password_as()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="Scenario:   " name="Scenario:   " time="0.005">
-    <error message="unknown error: keys should be a string
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 41 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/q0/43fl0y850d5g9ph3m8m0yczr0000gn/T/.org.chromium.Chromium.gJ4IpY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: c046a965253ae301a735fcaa4e6da653" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: keys should be a string
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 41 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/q0/43fl0y850d5g9ph3m8m0yczr0000gn/T/.org.chromium.Chromium.gJ4IpY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: c046a965253ae301a735fcaa4e6da653
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at step_definitions.stepdefinitions.I_enter_Username_as_and_Password_as(stepdefinitions.java:64)
-	at ✽.When I login myTW(features/DiscussionJive2Email.feature:11)
-</error>
-  </testcase>
-  <testcase classname="And I enter Security answer     " name="And I enter Security answer     " time="0.007">
+  <testcase classname="And I enter Security answer     " name="And I enter Security answer     " time="0.014">
     <skipped/>
-    <system-out>&amp;#27;[1A    &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mI login myTW&amp;#27;[0m                                                           &amp;#27;[90m# stepdefinitions.I_enter_Username_as_and_Password_as()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.WebDriverException: unknown error: keys should be a string
-        (Session info: chrome=60.0.3112.113)
-        (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-      Command duration or timeout: 41 milliseconds
-      Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-      System info: host: &apos;CNdfzheng.local&apos;, ip: &apos;fe80:0:0:0:ca1:1876:131e:fa7c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
-      Driver info: org.openqa.selenium.chrome.ChromeDriver
-      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/q0/43fl0y850d5g9ph3m8m0yczr0000gn/T/.org.chromium.Chromium.gJ4IpY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-      Session ID: c046a965253ae301a735fcaa4e6da653
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-      	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-      	at step_definitions.stepdefinitions.I_enter_Username_as_and_Password_as(stepdefinitions.java:64)
-      	at ✽.When I login myTW(features/DiscussionJive2Email.feature:11)
-      &amp;#27;[0m
+    <system-out>&amp;#27;[1A    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI login myTW&amp;#27;[0m                                                           &amp;#27;[90m# stepdefinitions.I_enter_Username_as_and_Password_as()&amp;#27;[0m
     &amp;#27;[90mAnd &amp;#27;[0m&amp;#27;[90mI enter Security answer&amp;#27;[0m                                                 &amp;#27;[90m# stepdefinitions.I_enter_Security_answer_as()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="And I open a new tab and go to testing group      " name="And I open a new tab and go to testing group      " time="0.008">
+  <testcase classname="And I open a new tab and go to testing group      " name="And I open a new tab and go to testing group      " time="0.015">
     <skipped/>
     <system-out>&amp;#27;[1A    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter Security answer&amp;#27;[0m                                                 &amp;#27;[90m# stepdefinitions.I_enter_Security_answer_as()&amp;#27;[0m
     &amp;#27;[90mAnd &amp;#27;[0m&amp;#27;[90mI open a new tab and go to testing group&amp;#27;[0m                                &amp;#27;[90m# stepdefinitions.I_open_a_new_tab_and_go_to_testing_group()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="And I post a new discussion in Jive       " name="And I post a new discussion in Jive       " time="0.008">
+  <testcase classname="And I post a new discussion in Jive       " name="And I post a new discussion in Jive       " time="0.015">
     <skipped/>
     <system-out>&amp;#27;[1A    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI open a new tab and go to testing group&amp;#27;[0m                                &amp;#27;[90m# stepdefinitions.I_open_a_new_tab_and_go_to_testing_group()&amp;#27;[0m
     &amp;#27;[90mAnd &amp;#27;[0m&amp;#27;[90mI post a new discussion in Jive&amp;#27;[0m                                         &amp;#27;[90m# stepdefinitions.I_post_a_new_discussion_in_Jive()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="And I open a new tab and login Gmail with &quot;cnctester3@dev.thoughtworks.com&quot;        " name="And I open a new tab and login Gmail with &quot;cnctester3@dev.thoughtworks.com&quot;        " time="0.009">
+  <testcase classname="And I open a new tab and login Gmail with &quot;cnctester3@dev.thoughtworks.com&quot;        " name="And I open a new tab and login Gmail with &quot;cnctester3@dev.thoughtworks.com&quot;        " time="0.016">
     <skipped/>
     <system-out>&amp;#27;[1A    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI post a new discussion in Jive&amp;#27;[0m                                         &amp;#27;[90m# stepdefinitions.I_post_a_new_discussion_in_Jive()&amp;#27;[0m
     &amp;#27;[90mAnd &amp;#27;[0m&amp;#27;[90mI open a new tab and login Gmail with &quot;&amp;#27;[0m&amp;#27;[90m&amp;#27;[1mcnctester3@dev.thoughtworks.com&amp;#27;[0m&amp;#27;[90m&quot;&amp;#27;[0m &amp;#27;[90m# stepdefinitions.I_open_a_new_tab_and_login_Gmail_with(String)&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="And I wait for a while         " name="And I wait for a while         " time="0.01">
+  <testcase classname="And I wait for a while         " name="And I wait for a while         " time="0.017">
     <skipped/>
     <system-out>&amp;#27;[1A    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI open a new tab and login Gmail with &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mcnctester3@dev.thoughtworks.com&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m &amp;#27;[90m# stepdefinitions.I_open_a_new_tab_and_login_Gmail_with(String)&amp;#27;[0m
     &amp;#27;[90mAnd &amp;#27;[0m&amp;#27;[90mI wait for a while&amp;#27;[0m                                                      &amp;#27;[90m# stepdefinitions.I_wait_for_a_while()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="Then I get the email in Gmail          " name="Then I get the email in Gmail          " time="0.011">
+  <testcase classname="Then I get the email in Gmail          " name="Then I get the email in Gmail          " time="0.019">
     <skipped/>
     <system-out>&amp;#27;[1A    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI wait for a while&amp;#27;[0m                                                      &amp;#27;[90m# stepdefinitions.I_wait_for_a_while()&amp;#27;[0m
     &amp;#27;[90mThen &amp;#27;[0m&amp;#27;[90mI get the email in Gmail&amp;#27;[0m                                               &amp;#27;[90m# stepdefinitions.I_get_the_email_in_Gmail()&amp;#27;[0m
