@@ -3,6 +3,10 @@ machine:
   java:
     version: openjdk8
 
+jobs:
+  build:
+    docker:
+          - image: selenium/standalone-chrome:latest
 
 dependencies:
   override:
