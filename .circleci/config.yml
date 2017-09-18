@@ -2,11 +2,25 @@ version: 2
 machine:
   java:
     version: openjdk8
+
+dependencies:
+  override:
+    - mvn -DskipTests clean install dependency:resolve-plugins dependency:go-offline
+
+test:
+  override:
+    - mvn -o surefire:test
+
+deployment:
+  main:
+    branch: master
+    commands:
+      - mvn -s .circleci.settings.xml -DskipTests deploy
+
 jobs:
   build:
     docker:
           - image: selenium/standalone-chrome:latest
     steps:
           - checkout
-          - run
-             command: mvn test
+          - run：  mvn test
