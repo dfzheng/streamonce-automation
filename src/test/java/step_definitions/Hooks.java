@@ -1,6 +1,5 @@
 package step_definitions;
-
-import org.junit.Before;
+import cucumber.annotation.Before;
 
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
@@ -14,7 +13,7 @@ public class Hooks {
 
 //Set unread email to read
 @Before
-public void MarkEmailAsRead() throws Exception{
+public void MarkEmailAsRead() throws Exception {
     Session session = Session.getDefaultInstance(new Properties());
     Store store = session.getStore("imaps");
     String username = System.getenv("USER3_USERNAME");
@@ -39,5 +38,4 @@ public void MarkEmailAsRead() throws Exception{
     //Set unread message to read
     inbox.setFlags(messages, new Flags(Flags.Flag.SEEN), true);
 
-}
-}
+}}
