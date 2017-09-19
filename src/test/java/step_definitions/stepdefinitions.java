@@ -146,7 +146,7 @@ public class stepdefinitions {
     }
 
     @And("^I open a new tab and login Gmail$")
-    public void I_open_a_new_tab_and_login_Gmail_with() {
+    public void I_open_a_new_tab_and_login_Gmail() {
 
         String google_user = System.getenv("USER3_USERNAME");
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
