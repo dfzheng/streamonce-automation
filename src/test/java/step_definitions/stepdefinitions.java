@@ -117,7 +117,7 @@ public class stepdefinitions {
         js.executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        driver.get("https://thoughtworks-preview.jiveon.com/groups/test-automation");
+        driver.get("https://thoughtworks-preview.jiveon.com/groups/soautomation");
     }
 
 
