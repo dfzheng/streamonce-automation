@@ -12,6 +12,6 @@ Feature: DiscussionJive2Email
     And  I enter Security answer
     And  I open a new tab and go to testing group
     And  I post a new discussion in Jive
-    And I open a new tab and login Gmail
+    And  I open a new tab and login Gmail
     And  I wait for a while
     Then I get the email in Gmail

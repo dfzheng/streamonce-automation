@@ -236,6 +236,7 @@ public class stepdefinitions {
             String str3 = Arrays.toString(message.getFrom());
             assertEquals(str1, str2);
             assertEquals("[CNC3 Tester3 <streamonce@dev.thoughtworks.com>]", str3);
+            System.out.println(str2);
 
         }
 
