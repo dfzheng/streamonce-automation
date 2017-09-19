@@ -1,4 +1,4 @@
-Feature: QuestionJiveToEmail
+Feature: QuestionJive2Email
 #This is how background can be used to eliminate duplicate steps
   Background:
   User navigates to myTW
