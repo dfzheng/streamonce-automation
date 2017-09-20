@@ -56,7 +56,7 @@ public class stepdefinitions {
     @When("^I send a email to group$")
     public void I_send_a_email_to_group() {
 
-        String to = "test-automation@dev.thoughtworks.com";
+        String to = "soautomation@dev.thoughtworks.com";
 
         String from = "cnctester3@dev.thoughtworks.com";
         final String username = System.getenv("USER3_USERNAME");
@@ -166,7 +166,7 @@ public class stepdefinitions {
         js.executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-        driver.get("https://thoughtworks-preview.jiveon.com/groups/test-automation/content");
+        driver.get("https://thoughtworks-preview.jiveon.com/groups/soautomation/content");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         String title = driver.findElement(By.xpath("//*[@id=\"j-browse-item-grid\"]/ul/li[1]/div/div[1]/header/h4/a/span[2]")).getText();
         String str1 = "Testing Email to Jive" + str;
