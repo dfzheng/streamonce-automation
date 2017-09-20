@@ -168,7 +168,7 @@ public class stepdefinitions {
         driver.switchTo().window(tabs.get(1));
         driver.get("https://thoughtworks-preview.jiveon.com/groups/soautomation/content");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        String title = driver.findElement(By.xpath("//*[@id=\"j-browse-item-grid\"]/ul/li[1]/div/div[1]/header/h4/a/span[2]")).getText();
+        String title = driver.findElement(By.xpath(".//*[@id='j-browse-item-grid']/div/table/tbody/tr[1]/td[2]/div/a")).getText();
         String str1 = "Testing Email to Jive" + str;
         assertEquals(str1, title);
         System.out.println("This is the title: " + title);
