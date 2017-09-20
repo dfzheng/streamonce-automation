@@ -178,7 +178,7 @@ public class stepdefinitions {
     public void I_check_the_content_and_sender() {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("var evt = document.createEvent('MouseEvents');" + "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);" + "arguments[0].dispatchEvent(evt);", driver.findElement(By.xpath(".//*[@id='j-browse-item-grid']/ul/li[1]/div/div[1]/header/h4/a/span[2]")));
+        js.executeScript("var evt = document.createEvent('MouseEvents');" + "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);" + "arguments[0].dispatchEvent(evt);", driver.findElement(By.xpath(".//*[@id='j-browse-item-grid']/div/table/tbody/tr[1]/td[2]/div/a")));
 
        /* /WebElement elementToClick = driver.findElement(By.xpath(".//*[@id='j-browse-item-grid']/ul/li[1]/div/div[1]/header/h4/a/span[2]"));
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0," + elementToClick.getLocation().y + ")");
