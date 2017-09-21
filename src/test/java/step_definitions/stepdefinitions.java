@@ -28,7 +28,9 @@ import static org.junit.Assert.assertEquals;
 
 public class stepdefinitions {
 
-    private RemoteWebDriver driver;
+    private RemoteWebDriver driver; //This is for docker webdriver
+
+  //  WebDriver driver = null;    use this when run in local
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     Timestamp now = new Timestamp(System.currentTimeMillis());
@@ -39,8 +41,12 @@ public class stepdefinitions {
     @Given("^I am on myTW login page$")
     public void goTomyTW() throws MalformedURLException {
 
+     //   System.setProperty("webdriver.chrome.driver", "/Users/dfzheng/Downloads/chromedriver");
+     //   driver = new ChromeDriver();           use this when run in local
+
+
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), capabilities);    //This is to connect docker webdriver
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://thoughtworks-preview.jiveon.com");
     }
